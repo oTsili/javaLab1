@@ -15,7 +15,11 @@ public class ArrayFunctions {
         double sum = 0;
         for (int num : promptArray) {
             sum += num;
+//            sum = sum + num;
         }
+//        for (int k=0; k < promptArray.length; k++){
+//            sum = sum + promptArray[k];
+//        }
         return (double) sum/promptArray.length;
     }
 

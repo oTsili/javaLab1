@@ -31,6 +31,9 @@ public class TestEmployee {
         System.out.println(" " + baseSalary + " " + bonus);
 
         return new Employee(employeeId, firstName, lastName, baseSalary, yearsOfService, bonus);
+
+//        Employee employee = new Employee(employeeId, firstName, lastName, baseSalary,yearsOfService,bonus);
+//        return employee;
     }
 
     public static void findLowSalary(Employee employee1, Employee employee2) {
@@ -46,8 +49,8 @@ public class TestEmployee {
         }
     }
 
-    public static void displayStaff(Employee[] staff) {
-        for (Employee employee : staff) {
+    public static void displayStaff(Employee[] st) {
+        for (Employee employee : st) {
             System.out.println(employee);
             System.out.println("Salary is: " + employee.salary());
         }
