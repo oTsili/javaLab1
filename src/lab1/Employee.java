@@ -1,3 +1,5 @@
+package lab1;
+
 public class Employee {
     private int employeeID;
 
@@ -9,7 +11,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee{" +
+        return "lab1.Employee{" +
                 "employeeID=" + employeeID +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +

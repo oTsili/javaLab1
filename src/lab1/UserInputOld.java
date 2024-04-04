@@ -1,6 +1,8 @@
+package lab1;
+
 import java.util.Scanner;
 
-// Η κλάση UserInput χρησιμοποιείται για την εισαγωγή δεδομένων από τον χρήστη
+// Η κλάση lab1.UserInput χρησιμοποιείται για την εισαγωγή δεδομένων από τον χρήστη
 class UserInputOld {
     private static Scanner scanner = new Scanner(System.in);
 

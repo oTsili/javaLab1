@@ -1,5 +1,7 @@
+package lab1;
+
 import java.io.*;
-class UserInput { //Class gia eisagogi dedomenwn apo to pliktrologio
+public class UserInput { //Class gia eisagogi dedomenwn apo to pliktrologio
     public static String getString(String prompt)  { //Methodos gia eisagogi String
 
         System.out.print(prompt + ": ");

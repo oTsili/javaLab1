@@ -1,4 +1,4 @@
-
+package lab1;
 
 public class Student {
     // Χαρακτηριστικά του φοιτητή
@@ -69,7 +69,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
+        return "lab1.Student{" +
                 "studentID=" + studentID +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +

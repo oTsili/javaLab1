@@ -1,7 +1,9 @@
+package lab1;
+
 public class TestEmployee {
     public static void main(String[] args) {
-//        Employee employee1 = new Employee(123,"Ioannis", "Papadopoulos",800.00, 4,200.00);
-//        Employee employee2 = new Employee(456,"George", "Kakouros",700.00, 3,150.00);
+//        lab1.Employee employee1 = new lab1.Employee(123,"Ioannis", "Papadopoulos",800.00, 4,200.00);
+//        lab1.Employee employee2 = new lab1.Employee(456,"George", "Kakouros",700.00, 3,150.00);
 //
 
         Employee employee1 = createEmployee();
@@ -30,9 +32,9 @@ public class TestEmployee {
 
             for( Employee employee: employees){
                if (employee.getBaseSalary() < 1200 && employee.getYearsOfService() >= 5){
-                   System.out.println("Employee " + employee.getLastName() + " is low wage!");
+                   System.out.println("lab1.Employee " + employee.getLastName() + " is low wage!");
                    employee.setBaseSalary(employee.getBaseSalary() + 100);
-                   System.out.println("Employee " + employee.getLastName() + " has now got a promotion and his new salary is " + employee.salary());
+                   System.out.println("lab1.Employee " + employee.getLastName() + " has now got a promotion and his new salary is " + employee.salary());
                    System.out.println(employee);
                }
             }

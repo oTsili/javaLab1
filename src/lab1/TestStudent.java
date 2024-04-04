@@ -1,6 +1,8 @@
+package lab1;
+
 public class TestStudent {
     public static void main(String[] args) {
-        // Δημιουργία 3 αντικειμένων Student
+        // Δημιουργία 3 αντικειμένων lab1.Student
         Student student1 = createStudent();
         Student student2 = createStudent();
         Student student3 = createStudent();
@@ -9,7 +11,7 @@ public class TestStudent {
         compareThreeStudentMarks(student1, student2, student3);
     }
 
-    // Μέθοδος για δημιουργία ενός αντικειμένου Student από τον χρήστη
+    // Μέθοδος για δημιουργία ενός αντικειμένου lab1.Student από τον χρήστη
     public static Student createStudent() {
         int studentID = UserInput.getInteger("Enter student ID");
         String firstName = UserInput.getString("Enter first name");
@@ -44,8 +46,6 @@ public class TestStudent {
                 }
             }
         }
-
-
 
         // Εκτύπωση των τελικών βαθμών των φοιτητών
         System.out.println("Top 3 students by final grade:");
