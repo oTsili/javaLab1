@@ -11,13 +11,17 @@ public class TestStudent {
         // create the array
         Student[] lab = new Student[studentSize];
         for (int i = 0; i < lab.length; i++) {
-            lab[i] = createStudent();
+        //  εισάγει έναν φοιτητή στην θέση pos του πίνακα "lab"
+            insertStudent(lab,createStudent(),i);   // lab[i] = createStudent();
         }
-
-//        // Σύγκριση των τελικών βαθμών των τριών φοιτητών
-//        compareThreeStudentMarks(student1, student2, student3);
-        int bestStudentIndex = bestStudent(lab);
-        System.out.println(lab[bestStudentIndex]);
+        //  εμφανίζει τα στοιχεία των φοιτητών του τμήματος
+        displayLab(lab);
+        //  εκτύπωση του αριθμού των φοιτητών που ο τελικός τους βαθμός είναι μεγαλύτερος ή ίσος του 5.
+        passed(lab);
+        //  εκτύπωση του μέσου όρου τελικής βαθμολογίας των φοιτητών του τμήματος
+        avgStudents(lab);
+        //  επιστρέφει τη θέση του πίνακα στην οποία βρίσκεται ο φοιτητής με το μεγαλύτερο τελικό βαθμό.
+        bestStudent(lab);
 
     }
 
@@ -39,13 +43,12 @@ public class TestStudent {
         if (pos >= 0 && pos < lab.length) {
             lab[pos] = st;
         }
-//        Student[] tempLab = new Student[lab.length+1];
-//        System.arraycopy(lab, 0, tempLab, 0, lab.length);
-//        tempLab[lab.length] = st;
+
     }
 
     // Μέθοδος για εμφάνιση των στοιχείων των φοιτητών του τμήματος
     public static void displayLab(Student[] lab) {
+        System.out.println("The lab students are:");
         for (Student student : lab) {
             if (student != null) {
                 System.out.println(student);
